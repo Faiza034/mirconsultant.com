@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0E4025;
+  --color-burgundy: #800020; /* accent only: use sparingly */
+  --color-olive: #3F4A25;
+  --color-gold: #C9A45C;
+  --color-ivory: #FAF9F5;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* Plain CSS below (no variant prefixes inside @apply) so editors/formatters cannot break it. */
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-olive);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); color: var(--color-primary); }
+  :focus-visible { outline: 2px solid var(--color-gold); outline-offset: 3px; }
+}
+
+@utility container-x {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-inline: 1.25rem;
+  @media (min-width: 40rem) { padding-inline: 2rem; }
+}
+
+@utility section {
+  padding-block: 4rem;
+  @media (min-width: 40rem) { padding-block: 6rem; }
+}
+
+@utility btn {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+@utility btn-gold {
+  display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; gap: 0.5rem;
+  border-radius: 9999px; padding: 0.75rem 1.5rem; font-size: 0.875rem; font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+  background-color: var(--color-gold); color: var(--color-primary);
+  &:hover { background-color: #fff; }
+}
+
+@utility btn-primary {
+  display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; gap: 0.5rem;
+  border-radius: 9999px; padding: 0.75rem 1.5rem; font-size: 0.875rem; font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+  background-color: var(--color-primary); color: #fff;
+  &:hover { background-color: var(--color-olive); }
+}
+
+@utility btn-burgundy {
+  display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; gap: 0.5rem;
+  border-radius: 9999px; padding: 0.75rem 1.5rem; font-size: 0.875rem; font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+  background-color: var(--color-burgundy); color: #fff;
+  &:hover { background-color: var(--color-olive); }
+}
+
+@utility btn-outline-light {
+  display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; gap: 0.5rem;
+  border-radius: 9999px; padding: 0.75rem 1.5rem; font-size: 0.875rem; font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+  border: 1px solid rgb(255 255 255 / 0.7); color: #fff;
+  &:hover { background-color: #fff; color: var(--color-primary); }
+}
+
+@utility btn-outline {
+  display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; gap: 0.5rem;
+  border-radius: 9999px; padding: 0.75rem 1.5rem; font-size: 0.875rem; font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+  border: 1px solid var(--color-primary); color: var(--color-primary);
+  &:hover { background-color: var(--color-primary); color: #fff; }
+}
+
+@utility card {
+  border-radius: 1rem;
+  border: 1px solid rgb(201 164 92 / 0.4);
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+}
+
+@utility field {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(201 164 92 / 0.6);
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: var(--color-olive);
+  &::placeholder { color: rgb(63 74 37 / 0.5); }
+  &:focus { border-color: var(--color-primary); outline: none; }
+}
