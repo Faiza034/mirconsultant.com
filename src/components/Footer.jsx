@@ -69,7 +69,7 @@ export default function Footer() {
     <footer className="relative isolate overflow-hidden bg-burgundy text-white">
       {/* Gold line that draws in + slow floating decorative rings */}
       <motion.div initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }} transition={{ duration: 1.1, ease: 'easeOut' }}
-        className="h-1 origin-left bg-gradient-to-r from-gold via-white/70 to-gold" aria-hidden="true" />
+        className="h-1 origin-left bg-linear-to-r from-gold via-white/70 to-gold" aria-hidden="true" />
       <motion.span aria-hidden="true" animate={{ y: [0, -14, 0] }} transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
         className="pointer-events-none absolute -right-20 top-10 -z-10 h-72 w-72 rounded-full border border-gold/30" />
       <motion.span aria-hidden="true" animate={{ y: [0, 12, 0] }} transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
@@ -83,7 +83,7 @@ export default function Footer() {
         ) : (
           <motion.div className="absolute top-1/2 flex items-center" initial={{ left: '-18%' }} animate={{ left: '108%' }}
             transition={{ duration: 16, repeat: Infinity, ease: 'linear' }}>
-            <span className="mr-1 h-px w-24 bg-gradient-to-r from-transparent to-gold sm:w-40" />
+            <span className="mr-1 h-px w-24 bg-linear-to-r from-transparent to-gold sm:w-40" />
             <motion.span animate={{ y: [-14, 10, -14], rotate: [38, 52, 38] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }} className="block">
               <Plane size={30} className="text-gold drop-shadow" />
             </motion.span>
@@ -115,7 +115,7 @@ export default function Footer() {
             {SITE.phones.map((p) => (
               <li key={p}><a href={telHref(p)} className="group inline-flex items-center gap-3 hover:text-gold"><span className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/60 transition-colors group-hover:bg-gold group-hover:text-burgundy"><Phone size={14} aria-hidden="true" /></span>{p}</a></li>
             ))}
-            <li><a href={SITE.url} className="group inline-flex items-center gap-3 hover:text-gold"><span className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/60 transition-colors group-hover:bg-gold group-hover:text-burgundy"><Globe size={14} aria-hidden="true" /></span>mireducationconsultants.com</a></li>
+            <li><a href={SITE.url} className="group inline-flex items-center gap-3 hover:text-gold"><span className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/60 transition-colors group-hover:bg-gold group-hover:text-burgundy"><Globe size={14} aria-hidden="true" /></span>https://mirconsultant-com-rho.vercel.app/</a></li>
           </ul>
         </motion.div>
       </motion.div>
