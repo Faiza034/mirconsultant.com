@@ -8,7 +8,7 @@
 
 A modern, fast and mobile-friendly website that helps students explore study-abroad destinations, universities and admission support.
 
-[Live Website]( https://mirconsultant-com-rho.vercel.app/) · [Instagram](https://www.instagram.com/mireducationconsultancy/) · [WhatsApp](https://wa.me/923008605180)
+[Live Website]( https://mireducationconsultants.com/) · [Instagram](https://www.instagram.com/mireducationconsultancy/) · [WhatsApp](https://wa.me/923008605180)
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite&logoColor=white)
@@ -131,7 +131,7 @@ npm run build
 **MIR Education & Immigration Consultants**
 
 - Phone / WhatsApp: 0300 860 5180 · 0300 860 5280
-- Website: [https://mirconsultant-com-rho.vercel.app/](https://mirconsultant-com-rho.vercel.app/)
+- Website: [https://mireducationconsultants.com/](https://mirconsultant-com-rho.vercel.app/)
 - Instagram: [@mireducationconsultancy](https://www.instagram.com/mireducationconsultants.co?fqnt=MWN0MHdqeGV6ZmhlYw==)
 
 ---

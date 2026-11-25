@@ -11,7 +11,7 @@ export default function FAQ() {
         const isOpen = open === i
         return (
           <div key={f.q} className="card overflow-hidden">
-            <h3 className="!font-sans">
+            <h3 className="font-sans!">
               <button type="button" onClick={() => setOpen(isOpen ? -1 : i)} aria-expanded={isOpen} aria-controls={`faq-${i}`}
                 className="flex min-h-14 w-full items-center justify-between gap-4 px-5 py-4 text-left text-base font-semibold text-primary">
                 {f.q}{isOpen ? <Minus size={18} className="shrink-0 text-gold" aria-hidden="true" /> : <Plus size={18} className="shrink-0 text-gold" aria-hidden="true" />}

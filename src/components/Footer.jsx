@@ -115,7 +115,7 @@ export default function Footer() {
             {SITE.phones.map((p) => (
               <li key={p}><a href={telHref(p)} className="group inline-flex items-center gap-3 hover:text-gold"><span className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/60 transition-colors group-hover:bg-gold group-hover:text-burgundy"><Phone size={14} aria-hidden="true" /></span>{p}</a></li>
             ))}
-            <li><a href={SITE.url} className="group inline-flex items-center gap-3 hover:text-gold"><span className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/60 transition-colors group-hover:bg-gold group-hover:text-burgundy"><Globe size={14} aria-hidden="true" /></span>https://mirconsultant-com-rho.vercel.app/</a></li>
+            <li><a href={SITE.url} className="group inline-flex items-center gap-3 hover:text-gold"><span className="flex h-8 w-8 items-center justify-center rounded-full border border-gold/60 transition-colors group-hover:bg-gold group-hover:text-burgundy"><Globe size={14} aria-hidden="true" /></span>mireducationconsultants.com</a></li>
           </ul>
         </motion.div>
       </motion.div>
